@@ -65,6 +65,39 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 
 # Prerequisites & Setups
 ## ***HTML & CSS setup:***
+use `mkdir` to create the local directory for the project.<br/>
+Set up the basic background for canvas 1 in [index.html](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/index.html):
+```JavaScript 
+...
+    <title>JavaScript Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <script src = "script.js"> </script>
+...
+```
+Set up the fundamental styles for canvas 1 in [style.css](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/style.css):
+```css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} #canvas1 {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #4d79bc;
+```
+
+
+
+
+
+
+
 
 
 # Debugging&Troubleshooting
