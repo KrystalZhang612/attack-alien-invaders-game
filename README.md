@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#synchronous-developing-notes)<br/> 
 [Testing Result](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#testing-result)
 # Contribution
-[Author]()
+[Author](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#author)
 # Game Premiere Storyline
 ***Central Computer***: <br/>
 `These alien creatures have very similar physiology to the earth seahorses. Their bodies can easily cut through the thick atmosphere. They can move very fast.`<br/> 
