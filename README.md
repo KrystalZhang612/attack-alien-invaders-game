@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#synchronous-developing-notes)<br/> 
-[Testing Result](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#testing-result)
+[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#testing-result)
 # Contribution
 [Author]()
 # Game Premiere Storyline
