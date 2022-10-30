@@ -104,17 +104,61 @@ Call the built-in object Drawing Context which contains all methods and properti
 ```
 Now the canvas 1 resizing-responsive:<br/>
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
-
-
-
-
-
-
-
-
-
 # Debugging&Troubleshooting
+
+
 # Synchronous Developing Notes
+Use Object Oriented JS to wrap variables and functions into objects. So use Encapsulation method to access the data that can be restricted from outside the bundle.
+## ***Creating Player and Game objects:***
+Create new player and new game and pass canvas properties in script.js:
+```JavaScript
+class Player {
+        constructor(game) {
+            this.game = game;
+            this.width = 120;
+            this.height = 190;
+            this.x = 20;
+            this.y = 100;
+            this.speedY = 0;
+} update() {
+            this.y += this.speedY;
+        }
+        draw(context) {
+            context.fillRect(this.x, this.y, this.width, this.height);
+}
+class Game {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+            this.player = new Player(this);
+} update() {
+            this.player.update();
+        }
+        draw(context) {
+            this.player.draw(context);
+```
+## ***Animation Loop:***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Testing Result
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
 
