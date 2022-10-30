@@ -366,11 +366,111 @@ Use toFixed() method to display timer on top:
     const formattedTime = (this.game.gameTime * 0.001).toFixed(1);
     context.fillText('Timer:' + formattedTime, 20, 100);
 ```
-
-
-
-
-
+[timer displayed on top.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/timer%20displayed%20on%20top.png)<br/>
+## ***Animated parallax backgrounds:***
+Add layers and other animated assets in index.html.<br/> 
+Define the speed of layers in script.js:
+```JavaScript 
+class Layer {
+        constructor(game, image, speedModifier){
+            this.game = game;
+            this.image = image;
+            this.speedModifier = speedModifier;
+            this.width = 1768;
+            this.height =  500;
+            this.x = 0;
+            this.y = 0;
+} update(){
+            if (this.x <= -this.width) this.x = 0;
+            else this.x -= this.game.speed * this.speedModifier;
+        }
+        draw(context){
+            context.drawImage(this.image, this.x, this.y);
+} }
+```
+For the Background, get layer 1 move in motion:
+```JavaScript 
+ class Background {
+        constructor(game){
+            this.game = game;
+            this.image1 = document.getElementById('layer1');
+            this.layer1 = new Layer(this.game, this.image1, 1);
+            this.layers = [this.layer1];
+update(){}
+draw() {}
+```
+Also add background in Game class:
+```JavaScript 
+  this.background = new Background(this);
+```
+[layer 1 move in motion in background.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/layer%201%20move%20in%20motion%20background.png)<br/>
+Changing background layers scenes and accelerating player moving speed:
+```JavaScript 
+constructor(game) {
+            this.game = game;
+            this.image1 = document.getElementById('layer1');
+            this.image2 = document.getElementById('layer2');
+            this.image3 = document.getElementById('layer3');
+            this.image4 = document.getElementById('layer4');
+            this.layer1 = new Layer(this.game, this.image1, 5);
+            this.layer2 = new Layer(this.game, this.image2, 5);
+            this.layer3 = new Layer(this.game, this.image3, 5);
+            this.layer4 = new Layer(this.game, this.image4, 5);
+            this.layers = [this.layer1, this.layer2, this.layer3,
+this.layer4];
+        }
+```
+[scenes switching amongst 4 layer backgrounds.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/scenes%20switching%20amongst%204%20layer%20backgrounds.png)<br/>
+## ***Sprite animation with JavaScript:***
+Add players assets in index.html.<br/>
+Then draw the players in script.js:
+```JavaScript 
+context.drawImage(this.image, this.x, this.y);
+```
+[characters drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/characters%20drawed.png)<br/>
+Make the single seahorse vivid:
+```JavaScript 
+//sprite animation
+            if (this.frameX < this.maxFrame){
+                this.frameX ++;
+            } else{
+                this.frameX = 0;
+            }
+```
+[vivid animated single seahorse.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/vivid%20animated%20single%20seahorse.png)<br/>
+Add animated effects to the enemies anglers as well:<br/>
+Similarly to seahorse, import enemies assets and define frame width and heights:
+```JavaScript 
+context.drawImage(this.image, this.frameX * this.width, this.frameY * this.height , this.width, this.height, this.x, this.y, this.width, this.height);
+```
+[angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/angler1%20drawed.png)<br/>
+[multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/muliple%20angler1%20on%20move.png)<br/>
+Create angler2 as same as creating angler1:
+```JavaScript 
+class Angler2 extends Enemy {
+        constructor(game) {
+            super(game);
+            this.width = 213;
+            this.height = 165;
+            this.y = Math.random() ...}
+```
+[both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/both%20anglers%20added%20.png)<br/>
+Add lucky fish class extended from Enemy class:
+```JavaScript 
+ class LuckyFish extends Enemy {
+        constructor(game) {
+            super(game);
+            this.width = 99;
+            this.height = 95;
+            this.y = Math.random() * (this.game.height * 0.9 -
+this.height);
+            this.image = document.getElementById('lucky');
+            this.frameY = Math.floor(Math.random() * 2);
+            this.lives = 3;
+            this.score = 15;
+            this.type = 'lucky'
+}
+```
 
 
 
@@ -395,6 +495,15 @@ Use toFixed() method to display timer on top:
 [enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.png)<br/> 
 [more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/more%20textures%20added%20on%20score%20count.png)<br/> 
 [player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20won%20congrats%20messages.png)<br/> 
+[timer displayed on top.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/timer%20displayed%20on%20top.png)<br/>
+[layer 1 move in motion in background.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/layer%201%20move%20in%20motion%20background.png)<br/>
+[scenes switching amongst 4 layer backgrounds.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/scenes%20switching%20amongst%204%20layer%20backgrounds.png)<br/>
+[characters drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/characters%20drawed.png)<br/>
+[vivid animated single seahorse.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/vivid%20animated%20single%20seahorse.png)<br/>
+[angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/angler1%20drawed.png)<br/>
+[multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/muliple%20angler1%20on%20move.png)<br/>
+[both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/both%20anglers%20added%20.png)<br/>
+
 
 
 
