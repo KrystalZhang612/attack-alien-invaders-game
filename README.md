@@ -150,7 +150,7 @@ Use Request Animation Frame method to tell the browser that we wish to perform a
     }
 animate();
 ```
-Change `this.speedY` to any numerical speed other than 0, the vertical movement as the animation of the player appears:
+Change `this.speedY` to any numerical speed other than 0, the vertical movement as the animation of the player appears:<br/> 
 [player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
 
 
