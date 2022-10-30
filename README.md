@@ -57,7 +57,8 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
   <img src ="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title ="JavaScript" alt ="JavaScript" width = "60" height = "60"/>&nbsp; 
   <img src ="https://github.com/devicons/devicon/blob/master/icons/visualstudio/visualstudio-plain.svg" title = "Visual Studio Code" alt = "Visual Studio Code" width = "60" height = "60"/>&nbsp;
   <img src ="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title ="HTML5" alt ="HTML5" width = "60" height = "60"/>&nbsp; 
-  
+  <img src ="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg" title ="CSS3" alt = "CSS3" width = "60" height = "60"/>&nbsp; 
+  <img src = ""
   
 </div>
  
