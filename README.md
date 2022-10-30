@@ -53,6 +53,10 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 [CSS3](https://en.wikipedia.org/wiki/CSS)<br/> 
 [Live Server Vscode Extension v5.7.9](https://www.vsixhub.com/vsix/1950/)<br/> 
 [Google Fonts](https://fonts.google.com/specimen/Bangers)<br/> 
+<div>
+  <img src ="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title ="JavaScript" alt ="JavaScript" width = "60" height = "60"/>&nbsp; 
+</div>
+ 
 
 
 # Prerequisites & Setups
