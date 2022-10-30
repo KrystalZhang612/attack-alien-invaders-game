@@ -46,6 +46,14 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 ### Click `Go Live` on the bottom bar to test and play the AttackAlienInvaders Game App. 
 ### Have Fun killing alien invaders!!!
 # 🛠️ Developing Languages, Tools, and Techniques Needed
+[JavaScript](https://www.javascript.com/)<br/> 
+[Vanilla JS](http://vanilla-js.com/)<br/> 
+[Vscode 1.72](https://code.visualstudio.com/updates/v1_72)<br/> 
+[HTML5](https://en.wikipedia.org/wiki/HTML5)<br/> 
+[CSS3](https://en.wikipedia.org/wiki/CSS)<br/> 
+[Live Server Vscode Extension v5.7.9](https://www.vsixhub.com/vsix/1950/)<br/> 
+[Google Fonts](https://fonts.google.com/specimen/Bangers)<br/> 
+
 
 # Prerequisites & Setups
 # Debugging&Troubleshooting
