@@ -91,7 +91,8 @@ Set up the fundamental styles for canvas 1 in [style.css](https://github.com/Kry
     transform: translate(-50%, -50%);
     background: #4d79bc;
 ```
-
+## ***Basic JavaScript setup:***
+Create a Load Event in [script.js](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/script.js) to fire when the whole page has been loaded, including all dependent resources as stylesheets and images for graphics using:
 
 
 
