@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 # Build
 [Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#prerequisites--setups)<br/>
-[Debugging&Troubleshooting]()<br/> 
+[Debugging&Troubleshooting](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes]()<br/> 
 [Testing Result]()
 # Contribution
