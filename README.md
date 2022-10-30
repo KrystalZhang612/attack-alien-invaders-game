@@ -471,6 +471,33 @@ this.height);
             this.type = 'lucky'
 }
 ```
+[all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20three%20kinds%20of%20fishes%20displayed.png)<br/>
+Power up the charges to better win the game:
+```JavaScript 
+ if (this.powerUp){
+                if (this.powerUpTimer > this.powerUpLimit){
+                    this.powerUpTimer = 0;
+                    this.powerUp = false;
+                    this.frameY = 0;
+                } else {
+                    this.powerUpTimer += deltaTime;
+                    this.frameY = 1;
+                    this.game.ammo += 0.1;
+} }
+```
+So now the seahorse lifespan is powered up and can better win the game:<br/>
+[power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/power%20up%20the%20charges.png)<br/>
+If add a bottom projectile:
+```JavaScript 
+ shootBottom() {
+            if (this.game.ammo > 0) {
+                this.projectiles.push(new Projectile(this.game, this.x
++ 80, this.y + 175));
+} }
+```
+[double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
+
+
 
 
 
@@ -503,11 +530,13 @@ this.height);
 [angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/angler1%20drawed.png)<br/>
 [multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/muliple%20angler1%20on%20move.png)<br/>
 [both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/both%20anglers%20added%20.png)<br/>
-
-
-
-
-
+[all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20three%20kinds%20of%20fishes%20displayed.png)<br/>
+[power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/power%20up%20the%20charges.png)<br/>
+[double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
+Import Google Font Bangers cursive on:
+https://fonts.google.com/specimen/Bangers
+into index.html and style.css.
+Replace this.fontFamily with Bangers font to make the rendering effective.<br/>
 
 
 
