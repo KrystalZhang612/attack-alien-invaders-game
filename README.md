@@ -284,7 +284,29 @@ Create a derived enemy class Angler1 extended from Enemy:
 ```
 Now we are adding enemies:<br/>
 [enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
-
+Minimize enemies to 0.2 size:<br/> 
+[minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/minimized%20enemies.png)<br/>
+## ***Collision detection between rectangles:***
+Create a checkCollision function to check for collision, delete enemy if collided:
+```JavaScript 
+ checkCollision(rect1, rect2){
+            return(   rect1.x < rect2.x + rect2.width &&
+                      rect1.x + rect1.width > rect2.x &&
+                      rect1.y < rect2.y + rect2.height &&
+                      rect1.height + rect1.y > rect2.y)
+  enemy.markedForDeletion = true;
+```
+Also show enemy scores as their lives count:
+```JavaScript 
+  if (this.checkCollision(projectile, enemy)){
+                enemy.lives--;
+                projectile.markedForDeletion = true;
+                if (enemy.lives <= 0){
+                       enemy.markedForDeletion = true;
+                       this.score += enemy.score;
+}
+```
+Now enemies lives reduced once they hit by ammos projectiles until they are killed:<br/> 
 
 
 
@@ -312,6 +334,7 @@ Now we are adding enemies:<br/>
 [yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/yellow%20projectiles%20shoots.png)<br/> 
 [ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
 [enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
+[minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/minimized%20enemies.png)<br/>
 
 
 
