@@ -38,5 +38,10 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 | Opera              | :white_check_mark: |
 | DuckDuckGo         | :white_check_mark: |
 
+# Method to Run & Test the Project Locally
+# Prerequisites & Setups
+# Debugging&Troubleshooting
+# Synchronous Developing Notes
+# Testing Result
 
 
