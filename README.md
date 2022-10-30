@@ -307,8 +307,65 @@ Also show enemy scores as their lives count:
 }
 ```
 Now enemies lives reduced once they hit by ammos projectiles until they are killed:<br/> 
-
-
+[enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.png)<br/> 
+## ***Drawing Games Score:***
+To give the score count more textures, add shadow effect, save and restore it:
+```JavaScript 
+ draw(context) {
+        context.save();
+        context.fillStyle = this.color;
+        context.shadowOffsetX = 2;
+        context.shadowOffsetY = 2;
+        context.shadowColor = 'black';
+        context.font = this.fontSize + 'px' + this.fontFamily;
+        //score
+        context.fillText('Score: ' + this.game.score, 20, 40);
+        //ammo
+        context.restore();
+```
+[more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/more%20textures%20added%20on%20score%20count.png)<br/> 
+## ***Win and Lose Condition:***
+Set up game over messages if the player win or lose:<br/> 
+If the player won, congrats them<br/> 
+Cheer them with “well done”<br/> 
+If the player lost, encourage them to try again next time: Set up the font sizes and spacing properly:
+```JavaScript 
+ if (this.game.gameOver) {
+                context.textAlign = 'center';
+                let message1;
+                let message2;
+                if (this.game.score > this.game.winningScore) {
+                    message1 = 'You Win!';
+                    message2 = 'Well Done!';
+                } else {
+                    message1 = 'You Lose!';
+                    message2 = 'Try Again Next Time!';
+                }
+                context.font = '50px' + this.fontFamily;
+                context.fillText(message1, this.game.width * 0.5,
+this.game.height * 0.5 - 40);
+                context.font = '25px' + this.fontFamily;
+                context.fillText(message2, this.game.width * 0.5,
+this.game.height * 0.5 + 40);
+}
+            context.restore();
+          }
+}
+```
+The player won and the congrats messages shows:<br/>
+[player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20won%20congrats%20messages.png)<br/> 
+## ***Counting Game Time:***
+Set game time limit, if exceed time limit, game over:
+```JavaScript 
+if (!this.gameOver) this.gameTime += deltaTime;
+if (this.gameTime > this.timeLimit) this.gameOver = true;
+```
+Use toFixed() method to display timer on top:
+```JavaScript 
+ //timer
+    const formattedTime = (this.game.gameTime * 0.001).toFixed(1);
+    context.fillText('Timer:' + formattedTime, 20, 100);
+```
 
 
 
@@ -335,6 +392,13 @@ Now enemies lives reduced once they hit by ammos projectiles until they are kill
 [ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
 [enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
 [minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/minimized%20enemies.png)<br/>
+[enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.png)<br/> 
+[more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/more%20textures%20added%20on%20score%20count.png)<br/> 
+[player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20won%20congrats%20messages.png)<br/> 
+
+
+
+
 
 
 
