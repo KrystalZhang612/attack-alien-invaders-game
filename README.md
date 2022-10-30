@@ -138,10 +138,20 @@ class Game {
             this.player.draw(context);
 ```
 ## ***Animation Loop:***
-
-
-
-
+Use Request Animation Frame method to tell the browser that we wish to perform an animation and it requests that the browser calls a specified function to update an animation before the next repaint in script.js:
+```JavaScript 
+ const game = new Game(canvas.width, canvas.height);
+    //animation loop
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        game.update();
+        game.draw(ctx);
+        requestAnimationFrame(animate);
+    }
+animate();
+```
+Change `this.speedY` to any numerical speed other than 0, the vertical movement as the animation of the player appears:
+[player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
 
 
 
@@ -161,7 +171,7 @@ class Game {
 
 # Testing Result
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
-
+[player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
 
 
 
