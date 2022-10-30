@@ -39,6 +39,12 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 | DuckDuckGo         | :white_check_mark: |
 
 # Method to Run & Test the Project Locally
+### Download the entire Starter folder of the BloggieBlog project to the local directory.
+### Open the project with Vscode on local device.
+### Install Vscode Extension Live Server Vscode Extension v5.7.9
+### Open index.html in Starter folder in Vscode.
+### Click Go Live on the bottom bar to view the BloggieBlog page.
+
 # Prerequisites & Setups
 # Debugging&Troubleshooting
 # Synchronous Developing Notes
