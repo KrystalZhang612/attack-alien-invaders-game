@@ -41,9 +41,9 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 # Method to Run & Test the Project Locally
 ### Download the entire AttackAlienInvaders Game App project to the local directory.
 ### Open the project with Vscode on local device.
-### Install Vscode Extension Live Server Vscode Extension v5.7.9
-### Open index.html in Vscode.
-### Click Go Live on the bottom bar to test and play the AttackAlienInvaders Game App. Have Fun! 
+### Install [Vscode Extension Live Server Vscode Extension v5.7.9](https://www.vsixhub.com/vsix/1950/)
+### Open [index.html](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/index.html) in Vscode.
+### Click `Go Live` on the bottom bar to test and play the AttackAlienInvaders Game App. Have Fun killing alien invaders!!!
 
 # Prerequisites & Setups
 # Debugging&Troubleshooting
