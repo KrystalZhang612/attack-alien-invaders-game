@@ -93,6 +93,18 @@ Set up the fundamental styles for canvas 1 in [style.css](https://github.com/Kry
 ```
 ## ***Basic JavaScript setup:***
 Create a Load Event in [script.js](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/script.js) to fire when the whole page has been loaded, including all dependent resources as stylesheets and images for graphics using:
+```JavaScript 
+window.addEventListener('load', function () {
+    //canvas setup
+    const canvas = document.getElementById('canvas1');
+```
+Call the built-in object Drawing Context which contains all methods and properties to draw and animate colors, shapes and other graphics on HTML canvas:
+```JavaScript 
+ const ctx = canvas.getContext('2d');
+```
+Now the canvas 1 resizing-responsive:<br/>
+[resizing-responsive canvas1.PNG]()<br/>
+
 
 
 
@@ -104,5 +116,7 @@ Create a Load Event in [script.js](https://github.com/KrystalZhang612/KrystalZha
 # Debugging&Troubleshooting
 # Synchronous Developing Notes
 # Testing Result
+
+
 
 
