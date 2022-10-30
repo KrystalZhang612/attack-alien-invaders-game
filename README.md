@@ -45,6 +45,7 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 ### Open [index.html](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/index.html) in Vscode.
 ### Click `Go Live` on the bottom bar to test and play the AttackAlienInvaders Game App. 
 ### Have Fun killing alien invaders!!!
+# 🛠️ Developing Languages, Tools, and Techniques Needed
 
 # Prerequisites & Setups
 # Debugging&Troubleshooting
