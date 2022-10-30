@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/72481348/198857930-95a5c040-1d47-4ca6-
 ### [Game Lost Demo](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/Lost%20Game.mov): Blazed! Get my repair kit and try again! 
 https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-89ec-333ad1ba01b8.mov
 # Build
-[Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
+[Method to Run & Test the Project Locally](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#method-to-run--test-the-project-locally)<br/> 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/README.md#synchronous-developing-notes)<br/> 
