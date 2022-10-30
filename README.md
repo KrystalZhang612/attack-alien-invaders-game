@@ -209,6 +209,82 @@ Also use filter method to filter out single projectile from projectiles:
 this.projectiles = this.projectiles.filter(projectile => !projectile.markedForDeletion);
 ```
 Now if player hit Space the horizontal projectiles displayed and shoot from top:<br/>
+[yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/yellow%20projectiles%20shoots.png)<br/> 
+## ***Periodic Events:***
+Set to manage the ammo time to delta time as a periodic event:
+```JavaScript
+ this.maxAmmo = 50;
+         this.ammoTimer = 0;
+         this.ammoInterval = 500;
+        }
+        update(deltaTime) {
+            this.player.update();
+            if (this.ammoTimer > this.ammoInterval) {
+                if (this.ammo < this.maxAmmo) this.ammo++;
+                this.ammoTimer = 0;
+            } else {
+                this.ammoTimer += deltaTime;
+            }
+```
+## ***Drawing Game UI:***
+Now draw the backup ammos as a for loop:
+```JavaScript
+ class UI {
+        constructor(game){
+            this.game = game;
+            this.fontSize = 25;
+            this.fontFamily = 'Helvetica';
+            this.color = 'yellow';
+        }
+        draw(context){
+            //ammo
+            context.fillStyle = this.color;
+            for (let i = 0; i < this.game.ammo; i++){
+                context.fillRect(20 + 5 * i , 50, 3, 20);
+            }
+}
+```
+The ammos are now slowly recharging until it reaches the maximum load:<br/>
+[ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
+## ***Base Enemy Class:***
+Create a parent enemy class:
+```JavaScript 
+ class Enemy {
+        constructor(game){
+            this.game = game;
+            this.x = this.game.width;
+            this.speedX = Math.random() * -1.5 -0.5;
+            this.markedForDeletion  = false;
+        }
+        update(){}
+        draw(){}
+```
+Create a derived enemy class Angler1 extended from Enemy:
+```JavaScript 
+  update(deltaTime) {
+            this.player.update();
+            if (this.ammoTimer > this.ammoInterval) {
+                if (this.ammo < this.maxAmmo) this.ammo++;
+                this.ammoTimer = 0;
+            } else {
+                this.ammoTimer += deltaTime;
+            }
+            this.enemies.forEach(enemy => {
+                enemy.update();
+            });
+            this.enemies = this.enemies.filter(enemy =>
+!enemy.markedForDeletion);
+            if (this.enemyTimer >  this.enemyInterval &&
+!this.gameOver){
+                this.addEnemy();
+                this.enemyTimer = 0;
+            } else {
+                this.enemyTimer += deltaTime;
+            }
+```
+Now we are adding enemies:<br/>
+[enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
+
 
 
 
@@ -233,6 +309,10 @@ Now if player hit Space the horizontal projectiles displayed and shoot from top:
 [player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
 [arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/arrowup%20actions%20displayed%20in%20console.png)<br/> 
 [continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/continuous%20arrow%20up%20appears%20singularly.png)<br/> 
+[yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/yellow%20projectiles%20shoots.png)<br/> 
+[ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
+[enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
+
 
 
 
