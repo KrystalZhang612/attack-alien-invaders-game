@@ -105,7 +105,8 @@ Call the built-in object Drawing Context which contains all methods and properti
 Now the canvas 1 resizing-responsive:<br/>
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
 # Debugging&Troubleshooting
-
+ Console Error: Uncaught TypeError in Console element inspect. <br/>
+ DEBUGGING: Use `window.addEventListener('keydown', e => {` in the input handler class.
 
 # Synchronous Developing Notes
 Use Object Oriented JS to wrap variables and functions into objects. So use Encapsulation method to access the data that can be restricted from outside the bundle.
