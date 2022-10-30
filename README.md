@@ -28,5 +28,15 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 - There is a stream of data about multiple different species.
 - The alien creatures in the hood of their ecosystem have special movements, special abilities, and interact with the environments on other planets.
 
+# Compatibility
+|  Browsers          | Supported          |
+| -------            | ------------------ |
+| Google Chrome      | :white_check_mark: |
+| Microsoft Edge     | :white_check_mark: |
+| Firefox            | :white_check_mark: |
+| Apple Safari       | :white_check_mark: |
+| Opera              | :white_check_mark: |
+| DuckDuckGo         | :white_check_mark: |
+
 
 
