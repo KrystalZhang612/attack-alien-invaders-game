@@ -165,6 +165,52 @@ class InputHandler {
                 }
                 console.log(this.game.keys)
 ```
+Now when push up arrow keys, in console these ArrowUp actions all displayed:<br/>
+[arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/arrowup%20actions%20displayed%20in%20console.png)<br/> 
+Change key index to make continuous arrowup avoid from appearing massive:
+```JavaScript 
+  window.addEventListener('keydown', e => {
+                if ((e.key === 'ArrowUp') &&
+this.game.keys.indexOf(e.key) === - 1) {
+                    this.game.keys.push(e.key);
+```
+Now continuous arrowup appears singularly:<br/>
+[continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/continuous%20arrow%20up%20appears%20singularly.png)<br/> 
+Change max speed as 3, now we can update to set: if user press arrow up is going up -maxspeed, if user press arrow down is going down +maxspeed. Else if stay still, stay still:
+```JavaScript 
+update() {
+if (this.game.keys.includes('ArrowUp'))
+this.speedY =-this.maxSpeed;
+else if (this.game.keys.includes('ArrowDown')) this.speedY = this.maxSpeed;
+else this.speedY = 0;
+```
+## ***Creating projectiles:***
+Create Projectile class to handle horizontal projectiles from the player:
+```JavaScript
+ class Projectile {
+        constructor(game, x, y) {
+            this.game = game;
+            this.x = x;
+            this.y = y;
+            this.width = 10;
+            this.height = 3;
+            this.speed = 3;
+            this.markedForDeletion = false;
+} update() {
+    this.x += this.speed;
+    if (this.x > this.game.width * 0.8) this.markedForDeletion = true;
+        }
+        draw(context) {
+            context.fillStyle = 'yellow';
+            context.fillRect(this.x, this.y, this.width, this.height);
+```
+Also use filter method to filter out single projectile from projectiles:
+```JavaScript 
+this.projectiles = this.projectiles.filter(projectile => !projectile.markedForDeletion);
+```
+Now if player hit Space the horizontal projectiles displayed and shoot from top:<br/>
+
+
 
 
 
@@ -185,6 +231,11 @@ class InputHandler {
 # Testing Result
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
 [player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
+[arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/arrowup%20actions%20displayed%20in%20console.png)<br/> 
+[continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/continuous%20arrow%20up%20appears%20singularly.png)<br/> 
+
+
+
 
 
 
