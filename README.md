@@ -152,6 +152,18 @@ animate();
 ```
 Change `this.speedY` to any numerical speed other than 0, the vertical movement as the animation of the player appears:<br/> 
 [player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
+## ***Keyboard Inputs:***
+Create key input handler to control key up and key down in script.js:
+```JavaScript 
+class InputHandler {
+        constructor(game) {
+            this.game = game;
+            window.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowUp') {
+                    this.game.keys.push(e.key);
+                }
+                console.log(this.game.keys)
+```
 
 
 
