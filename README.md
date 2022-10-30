@@ -17,4 +17,6 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 `It is surprisingly easy to override its circuits. Seems like these machines are not used by our technology. I’m getting a lot of new data.`<br/> 
 ***Central Computer***: <br/>
 `The atmosphere on this planet is thick enough to allow heavy silicon-based lifeforms to float but smoke is blocking most of the sunlight. Many creatures developed artificial lights and glowing appendages to see through the heavy clouds. The Seahorse sentinel has a basic attack that’s powerful against weak enemies, but if it absorbs energy from one of the overcharged creatures, it gets additional firepower for a short period of time and it instantly replenishes its ammo. Ammo also automatically recharges over time. It seems we just need to help it to get through these aggressive swarms in time so it can join its hive.`
+- There is a stream of data about multiple different species.
+- The alien creatures in the hood of their ecosystem have special movements, special abilities, and interact with the environments on other planets.
 
