@@ -496,19 +496,30 @@ If add a bottom projectile:
 } }
 ```
 [double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-
+Import Google Font Bangers cursive on:
+https://fonts.google.com/specimen/Bangers
+into index.html and style.css.<br/> 
+Replace this.fontFamily with Bangers font to make the rendering effective.<br/>
+[win message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/win%20message%20with%20bangers%20font.png)<br/> 
+[lose message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/lose%20message%20with%20bangers%20font.png)<br/> 
+Add other characters like drones and adjust their moving speed varyingly. Now all characters displayed:<br/>
+[all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20characters%20displayed.png)<br/>
+Add smokes and fire effects:
+```JavaScript 
+ class SmokeExplosion extends Explosion {
+        constructor(game, x, y) {
+            super(game, x, y);
+            this.image = document.getElementById('smokeExplosion');
+        }
+}
+    class FireExplosion extends Explosion {
+        constructor(game, x, y) {
+            super(game, x, y);
+            this.image = document.getElementById('fireExplosion');
+        }
+}
+```
+[smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/smoke%20and%20fire%20explosion%20effects%20added.png)<br/> 
 
 # Testing Result
 [resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
@@ -533,10 +544,12 @@ If add a bottom projectile:
 [all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20three%20kinds%20of%20fishes%20displayed.png)<br/>
 [power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/power%20up%20the%20charges.png)<br/>
 [double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
-Import Google Font Bangers cursive on:
-https://fonts.google.com/specimen/Bangers
-into index.html and style.css.
-Replace this.fontFamily with Bangers font to make the rendering effective.<br/>
+[win message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/win%20message%20with%20bangers%20font.png)<br/> 
+[lose message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/lose%20message%20with%20bangers%20font.png)<br/> 
+[all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20characters%20displayed.png)<br/>
+[smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/smoke%20and%20fire%20explosion%20effects%20added.png)<br/> 
+
+
 
 
 
