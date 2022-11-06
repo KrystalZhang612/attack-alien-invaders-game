@@ -13,7 +13,8 @@ https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-
 [Prerequisites & Setups](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#synchronous-developing-notes)<br/> 
-[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#testing-result)
+[Testing Result](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#testing-result)<br/>
+[Tags and Topics]() 
 # Contribution
 [Author](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/README.md#author)
 # Game Premiere Storyline
@@ -549,6 +550,8 @@ Add smokes and fire effects:
 [all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20characters%20displayed.png)<br/>
 [smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/smoke%20and%20fire%20explosion%20effects%20added.png)<br/> 
 
+# Tags and Topics 
+javascript, html5, css3, html-canvas, vanilla-javascript, sprite-animation, game-application. 
 # Author
 Krystal Zhang 
 https://github.com/KrystalZhang612<hr>
