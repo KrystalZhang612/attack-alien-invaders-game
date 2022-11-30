@@ -4,7 +4,7 @@ A cool 2D alien planet exploration steampunk-themed game application with techni
 ⏬
 ### ***Please carefully read [LICENSE.md](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/LICENSE) about the Open Source restrictions and the personal use policy of this project under [GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html), any commericial uses on this project by other than the owner [@KrystalZhang612](https://github.com/KrystalZhang612) or the authorized users and organizations, will be subjected to copyright violation with sebsequent potential legal concerns.***
 ## AttackAlienInvaders Game App Overview:
-### [Game Won Demo](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/Won%20Game.mov): Most Wondrous! Well done explorer!
+### [Game Won Demo](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/Won%20Game.mov): Most Wondrous! Well done explorer!
 https://user-images.githubusercontent.com/72481348/198857930-95a5c040-1d47-4ca6-b5a6-15ac05e8e520.mov
 ### [Game Lost Demo](https://github.com/KrystalZhang612/AttackAlienInvaders-Game-App/blob/main/Lost%20Game.mov): Blazed! Get my repair kit and try again! 
 https://user-images.githubusercontent.com/72481348/198857699-86d076d4-f746-435b-89ec-333ad1ba01b8.mov
