@@ -521,6 +521,36 @@ Add smokes and fire effects:
 [smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/smoke%20and%20fire%20explosion%20effects%20added.PNG)<br/> 
 
 # Testing Result
+<p align = "center">
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/resizing-responsive%20canvas1.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/player%20vertical%20movement%20as%20animation%20appears.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/arrowup%20actions%20displayed%20in%20console.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/continuous%20arrow%20up%20appears%20singularly.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/yellow%20projectiles%20shoots.PNG">&nbsp; 
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/ammos%20are%20slowly%20recharging.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/enemies%20are%20coming%20up.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/minimized%20enemies.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/more%20textures%20added%20on%20score%20count.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/player%20won%20congrats%20messages.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/timer%20displayed%20on%20top.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/layer%201%20move%20in%20motion%20background.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/scenes%20switching%20amongst%204%20layer%20backgrounds.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/characters%20drawed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/vivid%20animated%20single%20seahorse.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/angler1%20drawed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/muliple%20angler1%20on%20move.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/both%20anglers%20added.PNG%20.png">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/all%20three%20kinds%20of%20fishes%20displayed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/power%20up%20the%20charges.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/double%20ammos%20top%20and%20bottom.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/win%20message%20with%20bangers%20font.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/lose%20message%20with%20bangers%20font.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/all%20characters%20displayed.PNG">&nbsp;
+  <img src = "https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/smoke%20and%20fire%20explosion%20effects%20added.PNG">
+</p>
+
+
 
 
 # Tags and Topics 
