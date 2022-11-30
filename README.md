@@ -102,7 +102,7 @@ Call the built-in object Drawing Context which contains all methods and properti
  const ctx = canvas.getContext('2d');
 ```
 Now the canvas 1 resizing-responsive:<br/>
-[resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
+[resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/resizing-responsive%20canvas1.PNG)<br/>
 # Debugging&Troubleshooting
  Console Error: Uncaught TypeError in Console element inspect. <br/>
  DEBUGGING: Use `window.addEventListener('keydown', e => {` in the input handler class.
@@ -151,7 +151,7 @@ Use Request Animation Frame method to tell the browser that we wish to perform a
 animate();
 ```
 Change `this.speedY` to any numerical speed other than 0, the vertical movement as the animation of the player appears:<br/> 
-[player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
+[player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/player%20vertical%20movement%20as%20animation%20appears.PNG)<br/> 
 ## ***Keyboard Inputs:***
 Create key input handler to control key up and key down in script.js:
 ```JavaScript 
@@ -165,7 +165,7 @@ class InputHandler {
                 console.log(this.game.keys)
 ```
 Now when push up arrow keys, in console these ArrowUp actions all displayed:<br/>
-[arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/arrowup%20actions%20displayed%20in%20console.png)<br/> 
+[arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/arrowup%20actions%20displayed%20in%20console.PNG)<br/> 
 Change key index to make continuous arrowup avoid from appearing massive:
 ```JavaScript 
   window.addEventListener('keydown', e => {
@@ -174,7 +174,7 @@ this.game.keys.indexOf(e.key) === - 1) {
                     this.game.keys.push(e.key);
 ```
 Now continuous arrowup appears singularly:<br/>
-[continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/continuous%20arrow%20up%20appears%20singularly.png)<br/> 
+[continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/continuous%20arrow%20up%20appears%20singularly.PNG)<br/> 
 Change max speed as 3, now we can update to set: if user press arrow up is going up -maxspeed, if user press arrow down is going down +maxspeed. Else if stay still, stay still:
 ```JavaScript 
 update() {
@@ -208,7 +208,7 @@ Also use filter method to filter out single projectile from projectiles:
 this.projectiles = this.projectiles.filter(projectile => !projectile.markedForDeletion);
 ```
 Now if player hit Space the horizontal projectiles displayed and shoot from top:<br/>
-[yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/yellow%20projectiles%20shoots.png)<br/> 
+[yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/yellow%20projectiles%20shoots.PNG)<br/> 
 ## ***Periodic Events:***
 Set to manage the ammo time to delta time as a periodic event:
 ```JavaScript
@@ -244,7 +244,7 @@ Now draw the backup ammos as a for loop:
 }
 ```
 The ammos are now slowly recharging until it reaches the maximum load:<br/>
-[ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
+[ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/ammos%20are%20slowly%20recharging.PNG)<br/>
 ## ***Base Enemy Class:***
 Create a parent enemy class:
 ```JavaScript 
@@ -282,9 +282,9 @@ Create a derived enemy class Angler1 extended from Enemy:
             }
 ```
 Now we are adding enemies:<br/>
-[enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
+[enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/enemies%20are%20coming%20up.PNG)<br/>
 Minimize enemies to 0.2 size:<br/> 
-[minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/minimized%20enemies.png)<br/>
+[minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/minimized%20enemies.PNG)<br/>
 ## ***Collision detection between rectangles:***
 Create a checkCollision function to check for collision, delete enemy if collided:
 ```JavaScript 
@@ -306,7 +306,7 @@ Also show enemy scores as their lives count:
 }
 ```
 Now enemies lives reduced once they hit by ammos projectiles until they are killed:<br/> 
-[enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.png)<br/> 
+[enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.PNG)<br/> 
 ## ***Drawing Games Score:***
 To give the score count more textures, add shadow effect, save and restore it:
 ```JavaScript 
@@ -322,7 +322,7 @@ To give the score count more textures, add shadow effect, save and restore it:
         //ammo
         context.restore();
 ```
-[more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/more%20textures%20added%20on%20score%20count.png)<br/> 
+[more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/more%20textures%20added%20on%20score%20count.PNG)<br/> 
 ## ***Win and Lose Condition:***
 Set up game over messages if the player win or lose:<br/> 
 If the player won, congrats them<br/> 
@@ -352,7 +352,7 @@ this.game.height * 0.5 + 40);
 }
 ```
 The player won and the congrats messages shows:<br/>
-[player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20won%20congrats%20messages.png)<br/> 
+[player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/player%20won%20congrats%20messages.PNG)<br/> 
 ## ***Counting Game Time:***
 Set game time limit, if exceed time limit, game over:
 ```JavaScript 
@@ -365,7 +365,7 @@ Use toFixed() method to display timer on top:
     const formattedTime = (this.game.gameTime * 0.001).toFixed(1);
     context.fillText('Timer:' + formattedTime, 20, 100);
 ```
-[timer displayed on top.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/timer%20displayed%20on%20top.png)<br/>
+[timer displayed on top.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/timer%20displayed%20on%20top.PNG)<br/>
 ## ***Animated parallax backgrounds:***
 Add layers and other animated assets in index.html.<br/> 
 Define the speed of layers in script.js:
@@ -402,7 +402,7 @@ Also add background in Game class:
 ```JavaScript 
   this.background = new Background(this);
 ```
-[layer 1 move in motion in background.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/layer%201%20move%20in%20motion%20background.png)<br/>
+[layer 1 move in motion in background.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/layer%201%20move%20in%20motion%20background.PNG)<br/>
 Changing background layers scenes and accelerating player moving speed:
 ```JavaScript 
 constructor(game) {
@@ -419,14 +419,14 @@ constructor(game) {
 this.layer4];
         }
 ```
-[scenes switching amongst 4 layer backgrounds.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/scenes%20switching%20amongst%204%20layer%20backgrounds.png)<br/>
+[scenes switching amongst 4 layer backgrounds.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/scenes%20switching%20amongst%204%20layer%20backgrounds.PNG)<br/>
 ## ***Sprite animation with JavaScript:***
 Add players assets in index.html.<br/>
 Then draw the players in script.js:
 ```JavaScript 
 context.drawImage(this.image, this.x, this.y);
 ```
-[characters drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/characters%20drawed.png)<br/>
+[characters drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/characters%20drawed.PNG)<br/>
 Make the single seahorse vivid:
 ```JavaScript 
 //sprite animation
@@ -436,14 +436,14 @@ Make the single seahorse vivid:
                 this.frameX = 0;
             }
 ```
-[vivid animated single seahorse.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/vivid%20animated%20single%20seahorse.png)<br/>
+[vivid animated single seahorse.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/vivid%20animated%20single%20seahorse.PNG)<br/>
 Add animated effects to the enemies anglers as well:<br/>
 Similarly to seahorse, import enemies assets and define frame width and heights:
 ```JavaScript 
 context.drawImage(this.image, this.frameX * this.width, this.frameY * this.height , this.width, this.height, this.x, this.y, this.width, this.height);
 ```
-[angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/angler1%20drawed.png)<br/>
-[multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/muliple%20angler1%20on%20move.png)<br/>
+[angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/angler1%20drawed.PNG)<br/>
+[multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/muliple%20angler1%20on%20move.PNG)<br/>
 Create angler2 as same as creating angler1:
 ```JavaScript 
 class Angler2 extends Enemy {
@@ -453,7 +453,7 @@ class Angler2 extends Enemy {
             this.height = 165;
             this.y = Math.random() ...}
 ```
-[both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/both%20anglers%20added%20.png)<br/>
+[both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/both%20anglers%20added.PNG%20.png)<br/>
 Add lucky fish class extended from Enemy class:
 ```JavaScript 
  class LuckyFish extends Enemy {
@@ -470,7 +470,7 @@ this.height);
             this.type = 'lucky'
 }
 ```
-[all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20three%20kinds%20of%20fishes%20displayed.png)<br/>
+[all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/all%20three%20kinds%20of%20fishes%20displayed.PNG)<br/>
 Power up the charges to better win the game:
 ```JavaScript 
  if (this.powerUp){
@@ -485,7 +485,7 @@ Power up the charges to better win the game:
 } }
 ```
 So now the seahorse lifespan is powered up and can better win the game:<br/>
-[power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/power%20up%20the%20charges.png)<br/>
+[power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/power%20up%20the%20charges.PNG)<br/>
 If add a bottom projectile:
 ```JavaScript 
  shootBottom() {
@@ -494,15 +494,15 @@ If add a bottom projectile:
 + 80, this.y + 175));
 } }
 ```
-[double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
+[double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/double%20ammos%20top%20and%20bottom.PNG)<br/>
 Import Google Font Bangers cursive on:
 https://fonts.google.com/specimen/Bangers
 into index.html and style.css.<br/> 
 Replace this.fontFamily with Bangers font to make the rendering effective.<br/>
-[win message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/win%20message%20with%20bangers%20font.png)<br/> 
-[lose message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/lose%20message%20with%20bangers%20font.png)<br/> 
+[win message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/win%20message%20with%20bangers%20font.PNG)<br/> 
+[lose message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/lose%20message%20with%20bangers%20font.PNG)<br/> 
 Add other characters like drones and adjust their moving speed varyingly. Now all characters displayed:<br/>
-[all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20characters%20displayed.png)<br/>
+[all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/all%20characters%20displayed.PNG)<br/>
 Add smokes and fire effects:
 ```JavaScript 
  class SmokeExplosion extends Explosion {
@@ -518,35 +518,10 @@ Add smokes and fire effects:
         }
 }
 ```
-[smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/smoke%20and%20fire%20explosion%20effects%20added.png)<br/> 
+[smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/testing-result-AttackAlienInvader-game-app/smoke%20and%20fire%20explosion%20effects%20added.PNG)<br/> 
 
 # Testing Result
-[resizing-responsive canvas1.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/resizing-responsive%20canvas1.png)<br/>
-[player vertical movement as animation appears.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20vertical%20movement%20as%20animation%20appears.png)<br/> 
-[arrowup actions displayed in console.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/arrowup%20actions%20displayed%20in%20console.png)<br/> 
-[continuous arrow up appears singularly.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/continuous%20arrow%20up%20appears%20singularly.png)<br/> 
-[yellow projectiles shoots.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/yellow%20projectiles%20shoots.png)<br/> 
-[ammos are slowly recharging.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/ammos%20are%20slowly%20recharging.png)<br/>
-[enemies are coming up.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/enemies%20are%20coming%20up.png)<br/>
-[minimized enemies.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/minimized%20enemies.png)<br/>
-[enemies lives reduced until killed once hit by ammos and scores showed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/%20enemies%20lives%20reduced%20until%20killed%20once%20hit%20by%20ammos%20and%20scores%20showed.png)<br/> 
-[more textures added on score count.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/more%20textures%20added%20on%20score%20count.png)<br/> 
-[player won congrats messages.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/player%20won%20congrats%20messages.png)<br/> 
-[timer displayed on top.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/timer%20displayed%20on%20top.png)<br/>
-[layer 1 move in motion in background.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/layer%201%20move%20in%20motion%20background.png)<br/>
-[scenes switching amongst 4 layer backgrounds.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/scenes%20switching%20amongst%204%20layer%20backgrounds.png)<br/>
-[characters drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/characters%20drawed.png)<br/>
-[vivid animated single seahorse.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/vivid%20animated%20single%20seahorse.png)<br/>
-[angler1 drawed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/angler1%20drawed.png)<br/>
-[multiple angler1 on move.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/muliple%20angler1%20on%20move.png)<br/>
-[both anglers added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/both%20anglers%20added%20.png)<br/>
-[all three kinds of fishes displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20three%20kinds%20of%20fishes%20displayed.png)<br/>
-[power up the charges.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/power%20up%20the%20charges.png)<br/>
-[double ammos top and bottom.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/double%20ammos%20top%20and%20bottom%20.png)<br/>
-[win message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/win%20message%20with%20bangers%20font.png)<br/> 
-[lose message with bangers font.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/lose%20message%20with%20bangers%20font.png)<br/> 
-[all characters displayed.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/all%20characters%20displayed.png)<br/>
-[smoke and fire explosion effects added.PNG](https://github.com/KrystalZhang612/KrystalZhang-AttackAlienInvaders-Game-App/blob/main/smoke%20and%20fire%20explosion%20effects%20added.png)<br/> 
+
 
 # Tags and Topics 
 javascript, html5, css3, html-canvas, vanilla-javascript, sprite-animation, game-application. 
