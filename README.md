@@ -554,7 +554,9 @@ Add smokes and fire effects:
 
 
 # Tags and Topics 
-javascript, html5, css3, html-canvas, vanilla-javascript, sprite-animation, game-application. 
+javascript, html5, css3, html-canvas, vanilla-javascript, sprite-animation, game-application.
+# NOTE
+Connect Netifly to Github account when deploying a non-React App.
 # Author
 Krystal Zhang 
 https://github.com/KrystalZhang612<hr>
